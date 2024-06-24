@@ -1,0 +1,47 @@
+.anchor-pane {
+    -fx-background-color: #007ACC !important;
+}
+
+
+.menu-bar {
+    -fx-background-color: transparent;
+}
+
+.hbox {
+    -fx-background-color: #F4F4F4;
+}
+
+.vbox {
+    -fx-spacing: 10;
+}
+
+.text-area {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #CCCCCC;
+    -fx-padding: 10;
+}
+
+.table-view {
+    -fx-border-color: #CCCCCC;
+}
+
+.button {
+    -fx-background-color: #007ACC;
+    -fx-text-fill: #FFFFFF;
+}
+
+.text-field {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #CCCCCC;
+    -fx-padding: 5;
+}
+
+.menu {
+    -fx-text-fill: black;
+}
+
+.menu-item {
+    -fx-text-fill: black;
+}
+
+
