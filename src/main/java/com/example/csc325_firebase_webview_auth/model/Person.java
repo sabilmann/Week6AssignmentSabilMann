@@ -1,55 +1,54 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.example.csc325_firebase_webview_auth.model;
 
-/**
- *
- * @author MoaathAlrajab
- *
- *
- *
- *
- * Model:
- *
- *
- */
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+
 public class Person {
-    private String name;
-    private String major;
-    private int age;
+
+    private final SimpleStringProperty name;
+    private final SimpleStringProperty major;
+    private final SimpleIntegerProperty age;
 
     public Person(String name, String major, int age) {
-        this.name = name;
-        this.major = major;
-        this.age = age;
+        this.name = new SimpleStringProperty(name);
+        this.major = new SimpleStringProperty(major);
+        this.age = new SimpleIntegerProperty(age);
     }
 
     public String getName() {
+        return name.get();
+    }
+
+    public SimpleStringProperty nameProperty() {
         return name;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name.set(name);
     }
 
     public String getMajor() {
+        return major.get();
+    }
+
+    public SimpleStringProperty majorProperty() {
         return major;
     }
 
     public void setMajor(String major) {
-        this.major = major;
+        this.major.set(major);
     }
 
     public int getAge() {
+        return age.get();
+    }
+
+    public SimpleIntegerProperty ageProperty() {
         return age;
     }
 
     public void setAge(int age) {
-        this.age = age;
+        this.age.set(age);
     }
-    
-    
-    
 }
+

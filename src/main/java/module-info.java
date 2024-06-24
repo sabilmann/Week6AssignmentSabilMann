@@ -10,15 +10,15 @@ module com.example.csc325_firebase_webview_auth {
     requires google.cloud.firestore;
     requires firebase.admin;
     requires com.google.api.apicommon;
-
     requires google.cloud.core;
     requires com.google.auth;
-
+    requires google.cloud.storage;
 
     opens com.example.csc325_firebase_webview_auth.viewmodel to jdk.jsobject;
     exports com.example.csc325_firebase_webview_auth.viewmodel;
-    opens com.example.csc325_firebase_webview_auth.view;
+    opens com.example.csc325_firebase_webview_auth.view to javafx.fxml;
     exports com.example.csc325_firebase_webview_auth.view;
+    opens com.example.csc325_firebase_webview_auth.model to javafx.base;
     exports com.example.csc325_firebase_webview_auth.model;
-    opens com.example.csc325_firebase_webview_auth.model;
 }
+
